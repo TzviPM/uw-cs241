@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>asm</string>
+	</array>
+	<key>name</key>
+	<string>MIPS Assembly (CS241)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.cs241_mips</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Registers</string>
+			<key>match</key>
+			<string>\$([12]\d|3[01]|\d)</string>
+			<key>name</key>
+			<string>variable.cs241_mips</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operator Keywords</string>
+			<key>match</key>
+			<string>add|sub|mult|multu|div|divu|mfhi|mflo|lis|lw|sw|slt|sltu</string>
+			<key>name</key>
+			<string>keyword.operator.cs241_mips</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control Keywords</string>
+			<key>match</key>
+			<string>beq|bne|jr|jalr</string>
+			<key>name</key>
+			<string>keyword.control.cs241_mips</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cs241_mips</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Word Keyword</string>
+			<key>match</key>
+			<string>\.word (0x[0-9a-fA-F]{8}|\d+)</string>
+			<key>name</key>
+			<string>storage.type.cs241_mips</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.cs241_mips</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Labels</string>
+			<key>match</key>
+			<string>([A-Za-z_][A-Za-z0-9_]*):</string>
+			<key>name</key>
+			<string>meta.cs241_mips</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Line Comments</string>
+			<key>match</key>
+			<string>;.*</string>
+			<key>name</key>
+			<string>comment.line.character.cs241_mips</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.cs241_mips</string>
+	<key>uuid</key>
+	<string>dcfe2018-4792-4495-9054-9772cecf47f9</string>
+</dict>
+</plist>

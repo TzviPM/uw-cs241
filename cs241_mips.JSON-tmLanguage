@@ -1,0 +1,42 @@
+// [PackageDev] target_format: plist, ext: tmLanguage
+    { "name": "MIPS Assembly (CS241)",
+  "scopeName": "source.cs241_mips",
+  "fileTypes": ["asm"],
+  "uuid": "dcfe2018-4792-4495-9054-9772cecf47f9",
+
+  "patterns": [
+    { "match": "\\$([12]\\d|3[01]|\\d)",
+	  "name": "variable.cs241_mips",
+	  "captures": {
+	  	"1": { "name": "constant.language.cs241_mips" }
+	  },
+	  "comment": "Registers"
+	},
+	{ "match": "add|sub|mult|multu|div|divu|mfhi|mflo|lis|lw|sw|slt|sltu",
+	  "name": "keyword.operator.cs241_mips",
+	  "comment": "Operator Keywords"
+	},
+	{ "match": "beq|bne|jr|jalr",
+	  "name": "keyword.control.cs241_mips",
+	  "comment": "Control Keywords"
+	},
+	{ "match": "\\.word (0x[0-9a-fA-F]{8}|\\d+)",
+	  "name": "storage.type.cs241_mips",
+	  "captures": {
+	  	"1": { "name": "constant.numeric.cs241_mips" }
+	  },
+	  "comment": "Word Keyword"
+	},
+	{ "match": "([A-Za-z_][A-Za-z0-9_]*):",
+	  "name": "meta.cs241_mips",
+	  "captures": {
+	  	"1": { "name": "entity.name.function.cs241_mips" }
+	  },
+	  "comment": "Labels"
+	},
+	{ "match": ";.*",
+	  "name": "comment.line.character.cs241_mips",
+	  "comment": "Line Comments"
+	}
+  ]
+}
