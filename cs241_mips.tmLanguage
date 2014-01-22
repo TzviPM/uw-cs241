@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>Operator Keywords</string>
 			<key>match</key>
-			<string>add|sub|mult|multu|div|divu|mfhi|mflo|lis|lw|sw|slt|sltu</string>
+			<string>add|sub|multu|mult|divu|div|mfhi|mflo|lis|lw|sw|sltu|slt</string>
 			<key>name</key>
 			<string>keyword.operator.cs241_mips</string>
 		</dict>

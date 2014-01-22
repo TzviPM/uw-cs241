@@ -12,7 +12,7 @@
 	  },
 	  "comment": "Registers"
 	},
-	{ "match": "add|sub|mult|multu|div|divu|mfhi|mflo|lis|lw|sw|slt|sltu",
+	{ "match": "add|sub|multu|mult|divu|div|mfhi|mflo|lis|lw|sw|sltu|slt",
 	  "name": "keyword.operator.cs241_mips",
 	  "comment": "Operator Keywords"
 	},
